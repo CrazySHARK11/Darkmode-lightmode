@@ -1,0 +1,57 @@
+@media only screen and (max-width: 781px) {
+  :root {
+    --prcol:#000000;
+    --bgcol:#ffffff;
+  }
+  .darkmode {
+    --prcol:#ffffff;
+    --bgcol:#000000;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h2 hr {
+    width: 60%;
+  }
+  header nav #menubar {
+    position: absolute;
+    left: 0;
+    display: block;
+    top: 71px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    background-color: var(--prcol);
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+    text-align: right;
+  }
+  header nav #menubar li {
+    margin: 10px 10px 10px 0;
+  }
+  header nav #menubar li a {
+    color: var(--bgcol);
+  }
+  header nav #menubar i {
+    margin: 0 10px 10px 0;
+    color: var(--bgcol);
+  }
+  header nav #menubar #thicon {
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+  #menu-icon {
+    display: block;
+  }
+  .is-active {
+    min-height: 216px;
+  }
+  .banner .ban-row {
+    height: 540px;
+  }
+  .banner .ban-row h1 {
+    font-size: 35px;
+  }
+}
+/*# sourceMappingURL=mob.css.map */

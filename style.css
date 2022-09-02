@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: poppins;
+}
+
+:root {
+  --prcol:#000000;
+  --bgcol:#ffffff;
+}
+
+.darkmode {
+  --prcol:#ffffff;
+  --bgcol:#000000;
+}
+
+.wrap {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.button, #knowmore {
+  margin-top: 20px;
+  width: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.2em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 500;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+  background-color: #ff00d9;
+  color: #fff;
+}
+
+h2 {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--prcol);
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+}
+
+h2 hr {
+  background-color: #ff00d9;
+  height: 2px;
+  border: none;
+  width: 20%;
+}
+
+section {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--bgcol);
+}
+
+p {
+  color: var(--prcol);
+  font-size: 20px;
+  word-spacing: 9px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 40px;
+  letter-spacing: 3px;
+}
+
+::-moz-selection {
+  background-color: #ff00d9;
+  color: #fff;
+}
+
+::selection {
+  background-color: #ff00d9;
+  color: #fff;
+}
+
+#menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 2em;
+  color: var(--prcol);
+}
+
+header {
+  width: 100%;
+  position: absolute;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0;
+}
+
+header nav #logo {
+  font-size: 40px;
+  color: var(--prcol);
+  font-weight: 600;
+}
+
+header nav #logo span {
+  color: #ff00d9;
+}
+
+header nav #menubar {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav #menubar a {
+  color: var(--prcol);
+  font-weight: 500;
+  font-size: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header nav #menubar a:hover {
+  color: #ff00d9;
+}
+
+#thicon {
+  font-size: 30px;
+  color: var(--prcol);
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bgcol);
+}
+
+.banner .ban-row {
+  width: 100%;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner .ban-row h1 {
+  font-size: 53px;
+  color: var(--prcol);
+}
+
+.banner .ban-row h1 span {
+  color: #ff00d9;
+}
+
+.banner .ban-row .scroll {
+  width: 50px;
+  border: 3px solid var(--prcol);
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  border-radius: 30px;
+  margin-top: 2em;
+}
+
+.banner .ban-row .scroll span {
+  margin-bottom: 19px;
+  width: 8px;
+  height: 8px;
+  display: block;
+  border-radius: 50%;
+  background-color: var(--prcol);
+  -webkit-animation: blip 1s linear;
+          animation: blip 1s linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes blip {
+  100% {
+    -webkit-box-shadow: 0px 1px 7px 3px #ff00d9;
+            box-shadow: 0px 1px 7px 3px #ff00d9;
+  }
+}
+
+@keyframes blip {
+  100% {
+    -webkit-box-shadow: 0px 1px 7px 3px #ff00d9;
+            box-shadow: 0px 1px 7px 3px #ff00d9;
+  }
+}
+/*# sourceMappingURL=style.css.map */
