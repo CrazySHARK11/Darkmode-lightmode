@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    outline: none;
     text-decoration: none;
     box-sizing: border-box;
     font-family: poppins;
@@ -17,10 +18,14 @@ $th-col:#ff00b3;
 :root{
     --prcol:#000000;
     --bgcol:#ffffff;
+    --ipcol:#000000;
+    --bgip:#e1e1e1;
 }
 .darkmode{
     --prcol:#ffffff;
     --bgcol:#000;
+    --ipcol:#fff;
+    --bgip:#151414;
 }
 .wrap{
     width: 90%;
@@ -286,7 +291,74 @@ header{
     width: 100%;
     font-size: 30px;
     padding-bottom: 20px;
-    font-weight: 500;
+    font-weight: 600;
     text-shadow: -3px 2px 2px black;
 }
 // ==================== My-work ====================
+
+// ==================== Contact ====================
+.cont-form{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 30px;
+    margin-top: 3em;
+   
+    address{
+        font-style: normal;
+        flex-direction: column;
+        align-items: center;
+        flex-basis:300px;
+        display: flex;
+        gap: 2em;
+        // background-color: #e1e1e1;
+        p{
+            color: var(--prcol);
+        }
+        .social {
+            i{
+                gap: 1em;
+                display: inline;
+                margin: 0 10px;
+                font-size: 40px;
+                color: var(--prcol);
+                transition: 0.3s;
+                &:hover{
+                    color: $th-col;
+                }
+            }
+        }
+    }
+    form{
+        padding: 0 20px;
+        display: grid;
+        grid-template-columns:1fr ;
+        row-gap: 20px;
+        input , textarea{
+            width: 100%;
+            padding: 20px 10px;
+            background-color:var(--bgip);
+            border: none;
+            color: var(--ipcol);
+            border-radius: 5px;
+            font-size: 18px
+        }
+    }
+}
+#submit{
+    @extend .button;
+}
+
+// ==================== Contact ====================
+
+// ==================== Footer ====================
+#footer{
+    padding: 20px 0;
+    background-color: var(--bgip);
+    color: var(--prcol);
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    span{
+        color: $th-col;
+    }
+}
+// ==================== Footer ====================

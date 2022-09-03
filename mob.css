@@ -63,5 +63,13 @@
   .work span {
     width: 288px;
   }
+  .cont-form {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+  #footer {
+    margin-top: 2em;
+  }
 }
 /*# sourceMappingURL=mob.css.map */

@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  outline: none;
   text-decoration: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -11,11 +12,15 @@
 :root {
   --prcol:#000000;
   --bgcol:#ffffff;
+  --ipcol:#000000;
+  --bgip:#e1e1e1;
 }
 
 .darkmode {
   --prcol:#ffffff;
   --bgcol:#000;
+  --ipcol:#fff;
+  --bgip:#151414;
 }
 
 .wrap {
@@ -23,7 +28,7 @@
   margin: 0 auto;
 }
 
-.button, #knowmore {
+.button, #knowmore, #submit {
   margin-top: 20px;
   width: 170px;
   display: -webkit-box;
@@ -381,7 +386,83 @@ header nav #menubar a:hover {
   width: 100%;
   font-size: 30px;
   padding-bottom: 20px;
-  font-weight: 500;
+  font-weight: 600;
   text-shadow: -3px 2px 2px black;
+}
+
+.cont-form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  margin-top: 3em;
+}
+
+.cont-form address {
+  font-style: normal;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: 300px;
+      flex-basis: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2em;
+}
+
+.cont-form address p {
+  color: var(--prcol);
+}
+
+.cont-form address .social i {
+  gap: 1em;
+  display: inline;
+  margin: 0 10px;
+  font-size: 40px;
+  color: var(--prcol);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.cont-form address .social i:hover {
+  color: #ff00b3;
+}
+
+.cont-form form {
+  padding: 0 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  row-gap: 20px;
+}
+
+.cont-form form input, .cont-form form textarea {
+  width: 100%;
+  padding: 20px 10px;
+  background-color: var(--bgip);
+  border: none;
+  color: var(--ipcol);
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+#footer {
+  padding: 20px 0;
+  background-color: var(--bgip);
+  color: var(--prcol);
+  word-spacing: 1px;
+  letter-spacing: 1px;
+}
+
+#footer span {
+  color: #ff00b3;
 }
 /*# sourceMappingURL=style.css.map */
