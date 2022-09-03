@@ -296,11 +296,17 @@ header nav #menubar a:hover {
   width: 70%;
 }
 
+.my-work {
+  min-height: 50px;
+}
+
 .work {
   margin-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -369,5 +375,13 @@ header nav #menubar a:hover {
           transform: scale(1.1);
   -webkit-filter: contrast(110%);
           filter: contrast(110%);
+}
+
+.h3 {
+  width: 100%;
+  font-size: 30px;
+  padding-bottom: 20px;
+  font-weight: 500;
+  text-shadow: -3px 2px 2px black;
 }
 /*# sourceMappingURL=style.css.map */

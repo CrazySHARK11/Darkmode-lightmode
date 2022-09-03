@@ -11,6 +11,8 @@
 // Buttons
 // =====================Globals=================================
 
+
+
 $th-col:#ff00b3;
 :root{
     --prcol:#000000;
@@ -226,10 +228,13 @@ header{
 // ==================== About ====================
 
 // ==================== My-work ====================\
-
+.my-work{
+    min-height: 50px;
+}
 .work{
     margin-top: 40px;
      display: flex;
+     flex-wrap: wrap;
      justify-content: center;
      gap: 2em;
    span{
@@ -276,5 +281,12 @@ header{
         filter: contrast(110%);
     }
    }
+}
+.h3{
+    width: 100%;
+    font-size: 30px;
+    padding-bottom: 20px;
+    font-weight: 500;
+    text-shadow: -3px 2px 2px black;
 }
 // ==================== My-work ====================
