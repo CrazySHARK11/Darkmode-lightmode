@@ -11,14 +11,14 @@
 // Buttons
 // =====================Globals=================================
 
-$th-col:#ff00d9;
+$th-col:#ff00b3;
 :root{
     --prcol:#000000;
     --bgcol:#ffffff;
 }
 .darkmode{
     --prcol:#ffffff;
-    --bgcol:#000000;
+    --bgcol:#000;
 }
 .wrap{
     width: 90%;
@@ -30,6 +30,7 @@ $th-col:#ff00d9;
     display: flex;
     font-size: 1.2em;
     justify-content: center;
+    border-radius: 10px;
     font-weight: 500;
     align-items: center;
     height: 60px;
@@ -114,6 +115,7 @@ header{
 #thicon{
     font-size: 30px;
     color: var(--prcol);
+    cursor:pointer;
 }
 // ===================== Header =====================
 
@@ -174,5 +176,105 @@ header{
 // ==================== Banner ====================
 
 // ==================== About ====================
-
+.skills{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    // gap: 3em;
+  li{
+    font-size: 2em;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    color: var(--prcol);
+    margin: 20px 0;
+    list-style: none;
+    gap: 1em;
+    justify-content: space-between;
+    .bar{
+        width: 200px;
+        height: 7px;
+        border-radius:20px;
+        overflow: hidden;
+        // margin-left: 20px;
+        background-color: #e1e1e1;
+        span{
+            width: 80%;
+            background: $th-col;
+            height: 100%;
+            
+            display: block;
+        }
+    }
+  }
+}
+#css{
+    width: 50%;
+}
+#js{
+    width: 45%;
+}
+#git{
+    width: 40%;
+}
+#sass{
+    width: 60%;
+}
+#ps{
+    width: 70%;
+}
 // ==================== About ====================
+
+// ==================== My-work ====================\
+
+.work{
+    margin-top: 40px;
+     display: flex;
+     justify-content: center;
+     gap: 2em;
+   span{
+     position: relative;
+     display: block;
+     border-radius: 20px;
+     overflow: hidden;
+     width: 400px;
+     p{
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        height: 0% ;
+        overflow: hidden;
+        padding: 0 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 25px;
+        background: linear-gradient(rgba(0, 0, 0, 0.6), $th-col);
+        color: #fff;
+        align-items: center;
+        transition: 0.5s;
+        i{
+            margin-top:10px;
+            color: #000;
+            padding: 20px;
+            border-radius: 50%;
+            font-size: 30px;
+            background-color: #fff;
+        }
+    }
+    img{
+        display: block;
+        width:400px;
+        transition: 0.3s;
+        border-radius: 20px;
+    }
+    &:hover .wodes{
+        height: 100%;
+    }
+    &:hover img{
+        transform: scale(1.1);
+        filter: contrast(110%);
+    }
+   }
+}
+// ==================== My-work ====================

@@ -53,5 +53,12 @@
   .banner .ban-row h1 {
     font-size: 35px;
   }
+  .skills li {
+    font-size: 1.2em;
+    gap: .5em;
+  }
+  .skills li .bar {
+    width: 170px;
+  }
 }
 /*# sourceMappingURL=mob.css.map */
