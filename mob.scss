@@ -1,13 +1,17 @@
 @media only screen and (max-width:781px){
    $th-col:#ff00d9;
    :root{
-       --prcol:#000000;
-       --bgcol:#ffffff;
-   }
-   .darkmode{
-       --prcol:#ffffff;
-       --bgcol:#000000;
-   }
+    --prcol:#000000;
+    --bgcol:#ffffff;
+    --ipcol:#000000;
+    --bgip:#e1e1e1;
+}
+.darkmode{
+    --prcol:#ffffff;
+    --bgcol:#000;
+    --ipcol:#fff;
+    --bgip:#151414;
+}
    h2{
       font-size: 3rem;
       hr{
